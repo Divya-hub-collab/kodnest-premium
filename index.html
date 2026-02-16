@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodNest Premium Build System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="logo">KODNEST PREMIUM BUILD SYSTEM</div>
+        <div class="progress-indicator">Step 1 / 4</div>
+        <div class="status-badge status-not-started">Not Started</div>
+    </header>
+
+    <!-- Context Header -->
+    <section class="context-header">
+        <h1>Establish the KodNest premium visual system</h1>
+        <p>Define grounded tokens and layout that every product surface can inherit without rework.</p>
+    </section>
+
+    <main class="main-layout">
+        <!-- Primary Workspace -->
+        <section class="primary-workspace">
+
+            <!-- Color System -->
+            <div class="card mb-xl">
+                <h2>Color system</h2>
+                <p class="subtitle">Four disciplined colors. No gradients, no noise.</p>
+
+                <div class="two-col-grid">
+                    <div class="color-swatches">
+                        <div class="swatch-row">
+                            <div class="swatch" style="background-color: var(--bg-color); border: 1px solid #ddd;">
+                            </div>
+                            <div class="swatch-info">
+                                <strong>Background</strong>
+                                <span>#F7F6F3</span>
+                                <p class="caption">Default canvas. Avoid pure white to keep visual fatigue low.</p>
+                            </div>
+                        </div>
+                        <div class="swatch-row">
+                            <div class="swatch" style="background-color: var(--text-primary);"></div>
+                            <div class="swatch-info">
+                                <strong>Primary text</strong>
+                                <span>#111111</span>
+                                <p class="caption">Body and label text. No secondary gray palette.</p>
+                            </div>
+                        </div>
+                        <div class="swatch-row">
+                            <div class="swatch" style="background-color: var(--accent-color);"></div>
+                            <div class="swatch-info">
+                                <strong>Accent</strong>
+                                <span>#8B0000</span>
+                                <p class="caption">Primary action and emphasis. Use sparingly.</p>
+                            </div>
+                        </div>
+                        <div class="swatch-row">
+                            <div class="swatch" style="background-color: var(--success-color);"></div>
+                            <div class="swatch-info">
+                                <strong>Success</strong>
+                                <span>Muted green</span>
+                                <p class="caption">Confirmation only states. Never used as a primary action.</p>
+                            </div>
+                        </div>
+                        <div class="swatch-row">
+                            <div class="swatch" style="background-color: var(--warning-color);"></div>
+                            <div class="swatch-info">
+                                <strong>Warning</strong>
+                                <span>Muted amber</span>
+                                <p class="caption">Soft warnings and caution banners. No alarm tones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="usage-rules">
+                        <h3>Usage rules</h3>
+                        <ul>
+                            <li>Background remains off-white on every surface; no alternating stripes.</li>
+                            <li>Deep red accent is reserved for primary actions and key highlights.</li>
+                            <li>Success and warning colors appear only in inline feedback and banners.</li>
+                            <li>No additional brand or chart palettes are introduced at this layer.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography & Spacing -->
+            <div class="card mb-xl">
+                <h2>Typography & spacing</h2>
+                <p class="subtitle">Calm hierarchy with deliberate whitespace.</p>
+
+                <div class="two-col-grid">
+                    <div class="typography-demo">
+                        <div class="type-group">
+                            <span class="label">HEADING (SERIF)</span>
+                            <h2 class="demo-heading">Confident, measured product narrative</h2>
+                        </div>
+                        <div class="type-group">
+                            <span class="label">BODY (SANS-SERIF)</span>
+                            <p>KodNest text is set in a modern, system-aligned sans-serif at 16–18px with a line height
+                                between 1.6 and 1.8. Each paragraph is constrained to a comfortable reading width so
+                                dense content remains scannable.</p>
+                        </div>
+                    </div>
+
+                    <div class="spacing-scale-container">
+                        <h3>Spacing scale</h3>
+                        <p class="caption mb-md">All vertical and horizontal rhythm uses a single scale. No arbitrary
+                            gaps, no magic numbers.</p>
+                        <table class="spacing-table">
+                            <tr>
+                                <td><strong>8px</strong></td>
+                                <td>Fine padding, dense inline controls.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>16px</strong></td>
+                                <td>Default padding and line separation.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>24px</strong></td>
+                                <td>Section dividers and card gutters.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>40px</strong></td>
+                                <td>Major layout breathing room.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>64px</strong></td>
+                                <td>Page-level framing and empty states.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Components -->
+            <div class="card">
+                <h2>Components</h2>
+                <p class="subtitle">Buttons, inputs, cards, and messaging primitives without product logic.</p>
+
+                <h3 class="mb-sm">Buttons</h3>
+                <div class="component-row mb-lg">
+                    <button class="btn btn-primary">Primary action</button>
+                    <button class="btn btn-secondary">Secondary action</button>
+                    <button class="btn btn-ghost">Ghost action</button>
+                </div>
+
+                <h3 class="mb-sm">Inputs</h3>
+                <div class="two-col-grid mb-lg align-start">
+                    <div class="input-group">
+                        <label>Label</label>
+                        <input type="text" placeholder="Calm, intentional placeholder">
+                        <p class="hint">Optional hint text lives here.</p>
+                    </div>
+                    <div class="input-group error-state">
+                        <label>Field with error</label>
+                        <input type="text" value="Example value">
+                        <p class="error-msg">This input does not meet the expected format. Adjust and try again.</p>
+                    </div>
+                </div>
+
+                <h3 class="mb-sm">Feedback states</h3>
+                <div class="feedback-grid">
+                    <div class="feedback-card success">
+                        <h3>Saved and stable</h3>
+                        <p>Your latest configuration has been stored. You can move to the next step without re-running
+                            this flow.</p>
+                    </div>
+                    <div class="feedback-card warning">
+                        <h3>Checks needed before rollout</h3>
+                        <p>Some environments have not been verified yet. Review them calmly before you deploy to
+                            customers.</p>
+                    </div>
+                    <div class="feedback-card error">
+                        <h3>We could not apply this change</h3>
+                        <p>Something in the configuration prevented us from saving. Review the highlighted fields and
+                            try again. If it still fails, capture a short note and share it with your team.</p>
+                    </div>
+                    <div class="feedback-card empty-state">
+                        <h3>No sections defined yet</h3>
+                        <p>Start by outlining the surfaces that will use this system. When you add a section, it appears
+                            here with the shared layout and tokens pre-applied.</p>
+                        <button class="btn btn-secondary mt-sm">Add first section</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Secondary Panel -->
+        <aside class="secondary-panel">
+            <h3>How to apply this step</h3>
+            <p>Keep your implementation close to this reference. Adjust copy, not the system.</p>
+            <p>Use this panel as a working brief for your build tool or AI assistant. It describes the intent of the
+                current step without leaking into product features.</p>
+
+            <div class="prompt-group">
+                <label>Copyable build prompt</label>
+                <div class="prompt-box">
+                    Create a calm, premium workspace called "KodNest Premium Build System" using the provided color
+                    tokens, typography, spacing scale, and layout structure. Do not introduce gradients, animations
+                    beyond 150–200ms easing, or additional colors.
+                </div>
+            </div>
+
+            <div class="panel-actions">
+                <button class="btn btn-primary full-width mb-sm">Copy prompt</button>
+                <button class="btn btn-secondary full-width mb-sm">Build in Lovable</button>
+                <button class="btn btn-success full-width mb-sm">It worked</button>
+                <button class="btn btn-error full-width mb-sm">Error</button>
+                <button class="btn btn-secondary full-width">Add screenshot</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Proof Footer -->
+    <footer class="proof-footer">
+        <div class="proof-item">
+            <input type="checkbox" id="ui-built">
+            <label for="ui-built">UI built</label>
+        </div>
+        <div class="proof-item">
+            <input type="checkbox" id="logic-working">
+            <label for="logic-working">Logic working</label>
+        </div>
+        <div class="proof-item">
+            <input type="checkbox" id="test-passed">
+            <label for="test-passed">Test passed</label>
+        </div>
+        <div class="proof-item">
+            <input type="checkbox" id="deployed">
+            <label for="deployed">Deployed</label>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
